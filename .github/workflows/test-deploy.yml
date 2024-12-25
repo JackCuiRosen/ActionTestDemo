@@ -14,7 +14,7 @@ jobs:
     - name: 使用node.js ${{ matrix.node-version }} 开始构建
       uses: actions/setup-node@v4
       with:
-        node-vesion: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
     - run: npm run build
